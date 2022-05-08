@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url(cold.png) no-repeat center/cover;
+}
+
+#weather{
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background: url(cold.png)  no-repeat center/cover;
+}
+.hot{
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url(hot.png) no-repeat center/cover;
+}
+.hot #weather{
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url(hot.png) no-repeat center/cover;
+
+}
+.cold{
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url(cold.png) no-repeat center/cover;
+}
+.cold #weather{
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url(cold.png) no-repeat center/cover;
+
+}
+.input-search{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    transition: 0.4s;
+    font-size: 19px;
+}
+.input-search:focus{
+    background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 15px 0 15px 0;
+}
+
+.content{
+    text-align: center;
+    color: white;
+    transition: 0.4s;
+}
+
+.content .name {
+	white-space: nowrap;
+	font-size: 35px;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.content .time {
+	font-size: 15px;
+	margin: 6px 0;
+}
+
+.content .temprature{
+    font-size: 65px;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 2px 2px 0 2px rgba(0, 0, 0, 0.5);
+    margin: 20px 0 30px;
+	font-weight: 800;
+}
+
+.content .short-desc {
+	font-size: 40px;
+	font-weight: 600;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.content .more-desc {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+.content .more-desc > div {
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+}
+.content .more-desc > div span {
+	margin-top: 15px;
+}
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
+
